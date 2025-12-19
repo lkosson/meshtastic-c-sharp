@@ -52,16 +52,17 @@ namespace Meshtastic.Protobufs {
             "IAEoCzIULm1lc2h0YXN0aWMuR2VvUG9pbnQSDQoFc3R5bGUYAiABKAkSEgoK",
             "Zm9sbG93X2dwcxgDIAEoCCo+CgtDb21wYXNzTW9kZRILCgdEWU5BTUlDEAAS",
             "DgoKRklYRURfUklORxABEhIKDkZSRUVaRV9IRUFESU5HEAIqJQoFVGhlbWUS",
-            "CAoEREFSSxAAEgkKBUxJR0hUEAESBwoDUkVEEAIqtAIKCExhbmd1YWdlEgsK",
+            "CAoEREFSSxAAEgkKBUxJR0hUEAESBwoDUkVEEAIqwAIKCExhbmd1YWdlEgsK",
             "B0VOR0xJU0gQABIKCgZGUkVOQ0gQARIKCgZHRVJNQU4QAhILCgdJVEFMSUFO",
             "EAMSDgoKUE9SVFVHVUVTRRAEEgsKB1NQQU5JU0gQBRILCgdTV0VESVNIEAYS",
             "CwoHRklOTklTSBAHEgoKBlBPTElTSBAIEgsKB1RVUktJU0gQCRILCgdTRVJC",
             "SUFOEAoSCwoHUlVTU0lBThALEgkKBURVVENIEAwSCQoFR1JFRUsQDRINCglO",
             "T1JXRUdJQU4QDhINCglTTE9WRU5JQU4QDxINCglVS1JBSU5JQU4QEBINCglC",
-            "VUxHQVJJQU4QERIJCgVDWkVDSBASEhYKElNJTVBMSUZJRURfQ0hJTkVTRRAe",
-            "EhcKE1RSQURJVElPTkFMX0NISU5FU0UQH0JjChNjb20uZ2Vla3N2aWxsZS5t",
-            "ZXNoQg5EZXZpY2VVSVByb3Rvc1oiZ2l0aHViLmNvbS9tZXNodGFzdGljL2dv",
-            "L2dlbmVyYXRlZKoCFE1lc2h0YXN0aWMuUHJvdG9idWZzugIAYgZwcm90bzM="));
+            "VUxHQVJJQU4QERIJCgVDWkVDSBASEgoKBkRBTklTSBATEhYKElNJTVBMSUZJ",
+            "RURfQ0hJTkVTRRAeEhcKE1RSQURJVElPTkFMX0NISU5FU0UQH0JkChRvcmcu",
+            "bWVzaHRhc3RpYy5wcm90b0IORGV2aWNlVUlQcm90b3NaImdpdGh1Yi5jb20v",
+            "bWVzaHRhc3RpYy9nby9nZW5lcmF0ZWSqAhRNZXNodGFzdGljLlByb3RvYnVm",
+            "c7oCAGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Meshtastic.Protobufs.CompassMode), typeof(global::Meshtastic.Protobufs.Theme), typeof(global::Meshtastic.Protobufs.Language), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -212,6 +213,11 @@ namespace Meshtastic.Protobufs {
     /// Czech
     /// </summary>
     [pbr::OriginalName("CZECH")] Czech = 18,
+    /// <summary>
+    ///
+    /// Danish
+    /// </summary>
+    [pbr::OriginalName("DANISH")] Danish = 19,
     /// <summary>
     ///
     /// Simplified Chinese (experimental)
@@ -1184,7 +1190,7 @@ namespace Meshtastic.Protobufs {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static partial class Types {
       /// <summary>
-      ///   
+      ///
       /// How the GPS coordinates are displayed on the OLED screen.
       /// </summary>
       public enum GpsCoordinateFormat {
@@ -1195,7 +1201,7 @@ namespace Meshtastic.Protobufs {
         /// </summary>
         [pbr::OriginalName("DEC")] Dec = 0,
         /// <summary>
-        /// 
+        ///
         /// GPS coordinates are displayed in the degrees minutes seconds format:
         /// DD°MM'SS"C DDD°MM'SS"C, where C is the compass point representing the locations quadrant
         /// </summary>
