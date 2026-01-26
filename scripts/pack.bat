@@ -1,1 +1,1 @@
-dotnet pack -c Release -p:AssemblyVersion=2.0.7.2 -p:Version=2.0.7-beta2 ./Meshtastic/Meshtastic.csproj
+dotnet pack -c Release -p:AssemblyVersion=2.0.7.4 -p:Version=2.0.7-beta4 ./Meshtastic/Meshtastic.csproj
