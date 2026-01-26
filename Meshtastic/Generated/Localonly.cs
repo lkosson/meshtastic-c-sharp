@@ -35,7 +35,7 @@ namespace Meshtastic.Protobufs {
             "bmZpZxIrCgRsb3JhGAYgASgLMh0ubWVzaHRhc3RpYy5Db25maWcuTG9SYUNv",
             "bmZpZxI1CglibHVldG9vdGgYByABKAsyIi5tZXNodGFzdGljLkNvbmZpZy5C",
             "bHVldG9vdGhDb25maWcSDwoHdmVyc2lvbhgIIAEoDRIzCghzZWN1cml0eRgJ",
-            "IAEoCzIhLm1lc2h0YXN0aWMuQ29uZmlnLlNlY3VyaXR5Q29uZmlnIvsGChFM",
+            "IAEoCzIhLm1lc2h0YXN0aWMuQ29uZmlnLlNlY3VyaXR5Q29uZmlnIsAHChFM",
             "b2NhbE1vZHVsZUNvbmZpZxIxCgRtcXR0GAEgASgLMiMubWVzaHRhc3RpYy5N",
             "b2R1bGVDb25maWcuTVFUVENvbmZpZxI1CgZzZXJpYWwYAiABKAsyJS5tZXNo",
             "dGFzdGljLk1vZHVsZUNvbmZpZy5TZXJpYWxDb25maWcSUgoVZXh0ZXJuYWxf",
@@ -55,15 +55,16 @@ namespace Meshtastic.Protobufs {
             "TGlnaHRpbmdDb25maWcSSAoQZGV0ZWN0aW9uX3NlbnNvchgNIAEoCzIuLm1l",
             "c2h0YXN0aWMuTW9kdWxlQ29uZmlnLkRldGVjdGlvblNlbnNvckNvbmZpZxI9",
             "CgpwYXhjb3VudGVyGA4gASgLMikubWVzaHRhc3RpYy5Nb2R1bGVDb25maWcu",
-            "UGF4Y291bnRlckNvbmZpZxIPCgd2ZXJzaW9uGAggASgNQmUKFG9yZy5tZXNo",
-            "dGFzdGljLnByb3RvQg9Mb2NhbE9ubHlQcm90b3NaImdpdGh1Yi5jb20vbWVz",
-            "aHRhc3RpYy9nby9nZW5lcmF0ZWSqAhRNZXNodGFzdGljLlByb3RvYnVmc7oC",
-            "AGIGcHJvdG8z"));
+            "UGF4Y291bnRlckNvbmZpZxJDCg1zdGF0dXNtZXNzYWdlGA8gASgLMiwubWVz",
+            "aHRhc3RpYy5Nb2R1bGVDb25maWcuU3RhdHVzTWVzc2FnZUNvbmZpZxIPCgd2",
+            "ZXJzaW9uGAggASgNQmUKFG9yZy5tZXNodGFzdGljLnByb3RvQg9Mb2NhbE9u",
+            "bHlQcm90b3NaImdpdGh1Yi5jb20vbWVzaHRhc3RpYy9nby9nZW5lcmF0ZWSq",
+            "AhRNZXNodGFzdGljLlByb3RvYnVmc7oCAGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Meshtastic.Protobufs.ConfigReflection.Descriptor, global::Meshtastic.Protobufs.ModuleConfigReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.LocalConfig), global::Meshtastic.Protobufs.LocalConfig.Parser, new[]{ "Device", "Position", "Power", "Network", "Display", "Lora", "Bluetooth", "Version", "Security" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.LocalModuleConfig), global::Meshtastic.Protobufs.LocalModuleConfig.Parser, new[]{ "Mqtt", "Serial", "ExternalNotification", "StoreForward", "RangeTest", "Telemetry", "CannedMessage", "Audio", "RemoteHardware", "NeighborInfo", "AmbientLighting", "DetectionSensor", "Paxcounter", "Version" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.LocalModuleConfig), global::Meshtastic.Protobufs.LocalModuleConfig.Parser, new[]{ "Mqtt", "Serial", "ExternalNotification", "StoreForward", "RangeTest", "Telemetry", "CannedMessage", "Audio", "RemoteHardware", "NeighborInfo", "AmbientLighting", "DetectionSensor", "Paxcounter", "Statusmessage", "Version" }, null, null, null, null)
           }));
     }
     #endregion
@@ -722,6 +723,7 @@ namespace Meshtastic.Protobufs {
       ambientLighting_ = other.ambientLighting_ != null ? other.ambientLighting_.Clone() : null;
       detectionSensor_ = other.detectionSensor_ != null ? other.detectionSensor_.Clone() : null;
       paxcounter_ = other.paxcounter_ != null ? other.paxcounter_.Clone() : null;
+      statusmessage_ = other.statusmessage_ != null ? other.statusmessage_.Clone() : null;
       version_ = other.version_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -940,6 +942,22 @@ namespace Meshtastic.Protobufs {
       }
     }
 
+    /// <summary>Field number for the "statusmessage" field.</summary>
+    public const int StatusmessageFieldNumber = 15;
+    private global::Meshtastic.Protobufs.ModuleConfig.Types.StatusMessageConfig statusmessage_;
+    /// <summary>
+    ///
+    /// StatusMessage Config
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Meshtastic.Protobufs.ModuleConfig.Types.StatusMessageConfig Statusmessage {
+      get { return statusmessage_; }
+      set {
+        statusmessage_ = value;
+      }
+    }
+
     /// <summary>Field number for the "version" field.</summary>
     public const int VersionFieldNumber = 8;
     private uint version_;
@@ -986,6 +1004,7 @@ namespace Meshtastic.Protobufs {
       if (!object.Equals(AmbientLighting, other.AmbientLighting)) return false;
       if (!object.Equals(DetectionSensor, other.DetectionSensor)) return false;
       if (!object.Equals(Paxcounter, other.Paxcounter)) return false;
+      if (!object.Equals(Statusmessage, other.Statusmessage)) return false;
       if (Version != other.Version) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -1007,6 +1026,7 @@ namespace Meshtastic.Protobufs {
       if (ambientLighting_ != null) hash ^= AmbientLighting.GetHashCode();
       if (detectionSensor_ != null) hash ^= DetectionSensor.GetHashCode();
       if (paxcounter_ != null) hash ^= Paxcounter.GetHashCode();
+      if (statusmessage_ != null) hash ^= Statusmessage.GetHashCode();
       if (Version != 0) hash ^= Version.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -1082,6 +1102,10 @@ namespace Meshtastic.Protobufs {
         output.WriteRawTag(114);
         output.WriteMessage(Paxcounter);
       }
+      if (statusmessage_ != null) {
+        output.WriteRawTag(122);
+        output.WriteMessage(Statusmessage);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1148,6 +1172,10 @@ namespace Meshtastic.Protobufs {
         output.WriteRawTag(114);
         output.WriteMessage(Paxcounter);
       }
+      if (statusmessage_ != null) {
+        output.WriteRawTag(122);
+        output.WriteMessage(Statusmessage);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1196,6 +1224,9 @@ namespace Meshtastic.Protobufs {
       }
       if (paxcounter_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Paxcounter);
+      }
+      if (statusmessage_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Statusmessage);
       }
       if (Version != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Version);
@@ -1289,6 +1320,12 @@ namespace Meshtastic.Protobufs {
           Paxcounter = new global::Meshtastic.Protobufs.ModuleConfig.Types.PaxcounterConfig();
         }
         Paxcounter.MergeFrom(other.Paxcounter);
+      }
+      if (other.statusmessage_ != null) {
+        if (statusmessage_ == null) {
+          Statusmessage = new global::Meshtastic.Protobufs.ModuleConfig.Types.StatusMessageConfig();
+        }
+        Statusmessage.MergeFrom(other.Statusmessage);
       }
       if (other.Version != 0) {
         Version = other.Version;
@@ -1407,6 +1444,13 @@ namespace Meshtastic.Protobufs {
             input.ReadMessage(Paxcounter);
             break;
           }
+          case 122: {
+            if (statusmessage_ == null) {
+              Statusmessage = new global::Meshtastic.Protobufs.ModuleConfig.Types.StatusMessageConfig();
+            }
+            input.ReadMessage(Statusmessage);
+            break;
+          }
         }
       }
     #endif
@@ -1519,6 +1563,13 @@ namespace Meshtastic.Protobufs {
               Paxcounter = new global::Meshtastic.Protobufs.ModuleConfig.Types.PaxcounterConfig();
             }
             input.ReadMessage(Paxcounter);
+            break;
+          }
+          case 122: {
+            if (statusmessage_ == null) {
+              Statusmessage = new global::Meshtastic.Protobufs.ModuleConfig.Types.StatusMessageConfig();
+            }
+            input.ReadMessage(Statusmessage);
             break;
           }
         }

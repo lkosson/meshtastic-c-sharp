@@ -24,7 +24,7 @@ namespace Meshtastic.Protobufs {
     static PortnumsReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChltZXNodGFzdGljL3BvcnRudW1zLnByb3RvEgptZXNodGFzdGljKpYFCgdQ",
+            "ChltZXNodGFzdGljL3BvcnRudW1zLnByb3RvEgptZXNodGFzdGljKqsFCgdQ",
             "b3J0TnVtEg8KC1VOS05PV05fQVBQEAASFAoQVEVYVF9NRVNTQUdFX0FQUBAB",
             "EhcKE1JFTU9URV9IQVJEV0FSRV9BUFAQAhIQCgxQT1NJVElPTl9BUFAQAxIQ",
             "CgxOT0RFSU5GT19BUFAQBBIPCgtST1VUSU5HX0FQUBAFEg0KCUFETUlOX0FQ",
@@ -32,16 +32,17 @@ namespace Meshtastic.Protobufs {
             "SU5UX0FQUBAIEg0KCUFVRElPX0FQUBAJEhgKFERFVEVDVElPTl9TRU5TT1Jf",
             "QVBQEAoSDQoJQUxFUlRfQVBQEAsSGAoUS0VZX1ZFUklGSUNBVElPTl9BUFAQ",
             "DBINCglSRVBMWV9BUFAQIBIRCg1JUF9UVU5ORUxfQVBQECESEgoOUEFYQ09V",
-            "TlRFUl9BUFAQIhIeChpTVE9SRV9GT1JXQVJEX1BMVVNQTFVTX0FQUBAjEg4K",
-            "ClNFUklBTF9BUFAQQBIVChFTVE9SRV9GT1JXQVJEX0FQUBBBEhIKDlJBTkdF",
-            "X1RFU1RfQVBQEEISEQoNVEVMRU1FVFJZX0FQUBBDEgsKB1pQU19BUFAQRBIR",
-            "Cg1TSU1VTEFUT1JfQVBQEEUSEgoOVFJBQ0VST1VURV9BUFAQRhIUChBORUlH",
-            "SEJPUklORk9fQVBQEEcSDwoLQVRBS19QTFVHSU4QSBISCg5NQVBfUkVQT1JU",
-            "X0FQUBBJEhMKD1BPV0VSU1RSRVNTX0FQUBBKEhgKFFJFVElDVUxVTV9UVU5O",
-            "RUxfQVBQEEwSDwoLQ0FZRU5ORV9BUFAQTRIQCgtQUklWQVRFX0FQUBCAAhIT",
-            "Cg5BVEFLX0ZPUldBUkRFUhCBAhIICgNNQVgQ/wNCXgoUb3JnLm1lc2h0YXN0",
-            "aWMucHJvdG9CCFBvcnRudW1zWiJnaXRodWIuY29tL21lc2h0YXN0aWMvZ28v",
-            "Z2VuZXJhdGVkqgIUTWVzaHRhc3RpYy5Qcm90b2J1ZnO6AgBiBnByb3RvMw=="));
+            "TlRFUl9BUFAQIhIeChpTVE9SRV9GT1JXQVJEX1BMVVNQTFVTX0FQUBAjEhMK",
+            "D05PREVfU1RBVFVTX0FQUBAkEg4KClNFUklBTF9BUFAQQBIVChFTVE9SRV9G",
+            "T1JXQVJEX0FQUBBBEhIKDlJBTkdFX1RFU1RfQVBQEEISEQoNVEVMRU1FVFJZ",
+            "X0FQUBBDEgsKB1pQU19BUFAQRBIRCg1TSU1VTEFUT1JfQVBQEEUSEgoOVFJB",
+            "Q0VST1VURV9BUFAQRhIUChBORUlHSEJPUklORk9fQVBQEEcSDwoLQVRBS19Q",
+            "TFVHSU4QSBISCg5NQVBfUkVQT1JUX0FQUBBJEhMKD1BPV0VSU1RSRVNTX0FQ",
+            "UBBKEhgKFFJFVElDVUxVTV9UVU5ORUxfQVBQEEwSDwoLQ0FZRU5ORV9BUFAQ",
+            "TRIQCgtQUklWQVRFX0FQUBCAAhITCg5BVEFLX0ZPUldBUkRFUhCBAhIICgNN",
+            "QVgQ/wNCXgoUb3JnLm1lc2h0YXN0aWMucHJvdG9CCFBvcnRudW1zWiJnaXRo",
+            "dWIuY29tL21lc2h0YXN0aWMvZ28vZ2VuZXJhdGVkqgIUTWVzaHRhc3RpYy5Q",
+            "cm90b2J1ZnO6AgBiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Meshtastic.Protobufs.PortNum), }, null, null));
@@ -185,6 +186,14 @@ namespace Meshtastic.Protobufs {
     /// chain of messages.
     /// </summary>
     [pbr::OriginalName("STORE_FORWARD_PLUSPLUS_APP")] StoreForwardPlusplusApp = 35,
+    /// <summary>
+    ///
+    /// Node Status module
+    /// ENCODING: protobuf
+    /// This module allows setting an extra string of status for a node.
+    /// Broadcasts on change and on a timer, possibly once a day.
+    /// </summary>
+    [pbr::OriginalName("NODE_STATUS_APP")] NodeStatusApp = 36,
     /// <summary>
     ///
     /// Provides a hardware serial interface to send and receive from the Meshtastic network.

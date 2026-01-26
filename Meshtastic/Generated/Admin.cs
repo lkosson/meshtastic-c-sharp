@@ -28,7 +28,7 @@ namespace Meshtastic.Protobufs {
             "dGljL2NoYW5uZWwucHJvdG8aF21lc2h0YXN0aWMvY29uZmlnLnByb3RvGiJt",
             "ZXNodGFzdGljL2Nvbm5lY3Rpb25fc3RhdHVzLnByb3RvGhptZXNodGFzdGlj",
             "L2RldmljZV91aS5wcm90bxoVbWVzaHRhc3RpYy9tZXNoLnByb3RvGh5tZXNo",
-            "dGFzdGljL21vZHVsZV9jb25maWcucHJvdG8i1hgKDEFkbWluTWVzc2FnZRIX",
+            "dGFzdGljL21vZHVsZV9jb25maWcucHJvdG8ilxoKDEFkbWluTWVzc2FnZRIX",
             "Cg9zZXNzaW9uX3Bhc3NrZXkYZSABKAwSHQoTZ2V0X2NoYW5uZWxfcmVxdWVz",
             "dBgBIAEoDUgAEjMKFGdldF9jaGFubmVsX3Jlc3BvbnNlGAIgASgLMhMubWVz",
             "aHRhc3RpYy5DaGFubmVsSAASGwoRZ2V0X293bmVyX3JlcXVlc3QYAyABKAhI",
@@ -75,50 +75,57 @@ namespace Meshtastic.Protobufs {
             "cmVzcG9uc2UYLSABKAsyGi5tZXNodGFzdGljLkRldmljZVVJQ29uZmlnSAAS",
             "NQoPc3RvcmVfdWlfY29uZmlnGC4gASgLMhoubWVzaHRhc3RpYy5EZXZpY2VV",
             "SUNvbmZpZ0gAEhoKEHNldF9pZ25vcmVkX25vZGUYLyABKA1IABIdChNyZW1v",
-            "dmVfaWdub3JlZF9ub2RlGDAgASgNSAASHQoTYmVnaW5fZWRpdF9zZXR0aW5n",
-            "cxhAIAEoCEgAEh4KFGNvbW1pdF9lZGl0X3NldHRpbmdzGEEgASgISAASMAoL",
-            "YWRkX2NvbnRhY3QYQiABKAsyGS5tZXNodGFzdGljLlNoYXJlZENvbnRhY3RI",
-            "ABI8ChBrZXlfdmVyaWZpY2F0aW9uGEMgASgLMiAubWVzaHRhc3RpYy5LZXlW",
-            "ZXJpZmljYXRpb25BZG1pbkgAEh4KFGZhY3RvcnlfcmVzZXRfZGV2aWNlGF4g",
-            "ASgFSAASHAoScmVib290X290YV9zZWNvbmRzGF8gASgFSAASGAoOZXhpdF9z",
-            "aW11bGF0b3IYYCABKAhIABIYCg5yZWJvb3Rfc2Vjb25kcxhhIAEoBUgAEhoK",
-            "EHNodXRkb3duX3NlY29uZHMYYiABKAVIABIeChRmYWN0b3J5X3Jlc2V0X2Nv",
-            "bmZpZxhjIAEoBUgAEhYKDG5vZGVkYl9yZXNldBhkIAEoCEgAGlMKCklucHV0",
-            "RXZlbnQSEgoKZXZlbnRfY29kZRgBIAEoDRIPCgdrYl9jaGFyGAIgASgNEg8K",
-            "B3RvdWNoX3gYAyABKA0SDwoHdG91Y2hfeRgEIAEoDSLWAQoKQ29uZmlnVHlw",
-            "ZRIRCg1ERVZJQ0VfQ09ORklHEAASEwoPUE9TSVRJT05fQ09ORklHEAESEAoM",
-            "UE9XRVJfQ09ORklHEAISEgoOTkVUV09SS19DT05GSUcQAxISCg5ESVNQTEFZ",
-            "X0NPTkZJRxAEEg8KC0xPUkFfQ09ORklHEAUSFAoQQkxVRVRPT1RIX0NPTkZJ",
-            "RxAGEhMKD1NFQ1VSSVRZX0NPTkZJRxAHEhUKEVNFU1NJT05LRVlfQ09ORklH",
-            "EAgSEwoPREVWSUNFVUlfQ09ORklHEAkiuwIKEE1vZHVsZUNvbmZpZ1R5cGUS",
-            "DwoLTVFUVF9DT05GSUcQABIRCg1TRVJJQUxfQ09ORklHEAESEwoPRVhUTk9U",
-            "SUZfQ09ORklHEAISFwoTU1RPUkVGT1JXQVJEX0NPTkZJRxADEhQKEFJBTkdF",
-            "VEVTVF9DT05GSUcQBBIUChBURUxFTUVUUllfQ09ORklHEAUSFAoQQ0FOTkVE",
-            "TVNHX0NPTkZJRxAGEhAKDEFVRElPX0NPTkZJRxAHEhkKFVJFTU9URUhBUkRX",
-            "QVJFX0NPTkZJRxAIEhcKE05FSUdIQk9SSU5GT19DT05GSUcQCRIaChZBTUJJ",
-            "RU5UTElHSFRJTkdfQ09ORklHEAoSGgoWREVURUNUSU9OU0VOU09SX0NPTkZJ",
-            "RxALEhUKEVBBWENPVU5URVJfQ09ORklHEAwiIwoOQmFja3VwTG9jYXRpb24S",
-            "CQoFRkxBU0gQABIGCgJTRBABQhEKD3BheWxvYWRfdmFyaWFudCJbCg1IYW1Q",
-            "YXJhbWV0ZXJzEhEKCWNhbGxfc2lnbhgBIAEoCRIQCgh0eF9wb3dlchgCIAEo",
-            "BRIRCglmcmVxdWVuY3kYAyABKAISEgoKc2hvcnRfbmFtZRgEIAEoCSJmCh5O",
-            "b2RlUmVtb3RlSGFyZHdhcmVQaW5zUmVzcG9uc2USRAoZbm9kZV9yZW1vdGVf",
-            "aGFyZHdhcmVfcGlucxgBIAMoCzIhLm1lc2h0YXN0aWMuTm9kZVJlbW90ZUhh",
-            "cmR3YXJlUGluInMKDVNoYXJlZENvbnRhY3QSEAoIbm9kZV9udW0YASABKA0S",
-            "HgoEdXNlchgCIAEoCzIQLm1lc2h0YXN0aWMuVXNlchIVCg1zaG91bGRfaWdu",
-            "b3JlGAMgASgIEhkKEW1hbnVhbGx5X3ZlcmlmaWVkGAQgASgIIpwCChRLZXlW",
-            "ZXJpZmljYXRpb25BZG1pbhJCCgxtZXNzYWdlX3R5cGUYASABKA4yLC5tZXNo",
-            "dGFzdGljLktleVZlcmlmaWNhdGlvbkFkbWluLk1lc3NhZ2VUeXBlEhYKDnJl",
-            "bW90ZV9ub2RlbnVtGAIgASgNEg0KBW5vbmNlGAMgASgEEhwKD3NlY3VyaXR5",
-            "X251bWJlchgEIAEoDUgAiAEBImcKC01lc3NhZ2VUeXBlEhkKFUlOSVRJQVRF",
-            "X1ZFUklGSUNBVElPThAAEhsKF1BST1ZJREVfU0VDVVJJVFlfTlVNQkVSEAES",
-            "DQoJRE9fVkVSSUZZEAISEQoNRE9fTk9UX1ZFUklGWRADQhIKEF9zZWN1cml0",
-            "eV9udW1iZXJCYQoUb3JnLm1lc2h0YXN0aWMucHJvdG9CC0FkbWluUHJvdG9z",
-            "WiJnaXRodWIuY29tL21lc2h0YXN0aWMvZ28vZ2VuZXJhdGVkqgIUTWVzaHRh",
-            "c3RpYy5Qcm90b2J1ZnO6AgBiBnByb3RvMw=="));
+            "dmVfaWdub3JlZF9ub2RlGDAgASgNSAASGwoRdG9nZ2xlX211dGVkX25vZGUY",
+            "MSABKA1IABIdChNiZWdpbl9lZGl0X3NldHRpbmdzGEAgASgISAASHgoUY29t",
+            "bWl0X2VkaXRfc2V0dGluZ3MYQSABKAhIABIwCgthZGRfY29udGFjdBhCIAEo",
+            "CzIZLm1lc2h0YXN0aWMuU2hhcmVkQ29udGFjdEgAEjwKEGtleV92ZXJpZmlj",
+            "YXRpb24YQyABKAsyIC5tZXNodGFzdGljLktleVZlcmlmaWNhdGlvbkFkbWlu",
+            "SAASHgoUZmFjdG9yeV9yZXNldF9kZXZpY2UYXiABKAVIABIgChJyZWJvb3Rf",
+            "b3RhX3NlY29uZHMYXyABKAVCAhgBSAASGAoOZXhpdF9zaW11bGF0b3IYYCAB",
+            "KAhIABIYCg5yZWJvb3Rfc2Vjb25kcxhhIAEoBUgAEhoKEHNodXRkb3duX3Nl",
+            "Y29uZHMYYiABKAVIABIeChRmYWN0b3J5X3Jlc2V0X2NvbmZpZxhjIAEoBUgA",
+            "EhYKDG5vZGVkYl9yZXNldBhkIAEoCEgAEjgKC290YV9yZXF1ZXN0GGYgASgL",
+            "MiEubWVzaHRhc3RpYy5BZG1pbk1lc3NhZ2UuT1RBRXZlbnRIABpTCgpJbnB1",
+            "dEV2ZW50EhIKCmV2ZW50X2NvZGUYASABKA0SDwoHa2JfY2hhchgCIAEoDRIP",
+            "Cgd0b3VjaF94GAMgASgNEg8KB3RvdWNoX3kYBCABKA0aSgoIT1RBRXZlbnQS",
+            "LAoPcmVib290X290YV9tb2RlGAEgASgOMhMubWVzaHRhc3RpYy5PVEFNb2Rl",
+            "EhAKCG90YV9oYXNoGAIgASgMItYBCgpDb25maWdUeXBlEhEKDURFVklDRV9D",
+            "T05GSUcQABITCg9QT1NJVElPTl9DT05GSUcQARIQCgxQT1dFUl9DT05GSUcQ",
+            "AhISCg5ORVRXT1JLX0NPTkZJRxADEhIKDkRJU1BMQVlfQ09ORklHEAQSDwoL",
+            "TE9SQV9DT05GSUcQBRIUChBCTFVFVE9PVEhfQ09ORklHEAYSEwoPU0VDVVJJ",
+            "VFlfQ09ORklHEAcSFQoRU0VTU0lPTktFWV9DT05GSUcQCBITCg9ERVZJQ0VV",
+            "SV9DT05GSUcQCSLVAgoQTW9kdWxlQ29uZmlnVHlwZRIPCgtNUVRUX0NPTkZJ",
+            "RxAAEhEKDVNFUklBTF9DT05GSUcQARITCg9FWFROT1RJRl9DT05GSUcQAhIX",
+            "ChNTVE9SRUZPUldBUkRfQ09ORklHEAMSFAoQUkFOR0VURVNUX0NPTkZJRxAE",
+            "EhQKEFRFTEVNRVRSWV9DT05GSUcQBRIUChBDQU5ORURNU0dfQ09ORklHEAYS",
+            "EAoMQVVESU9fQ09ORklHEAcSGQoVUkVNT1RFSEFSRFdBUkVfQ09ORklHEAgS",
+            "FwoTTkVJR0hCT1JJTkZPX0NPTkZJRxAJEhoKFkFNQklFTlRMSUdIVElOR19D",
+            "T05GSUcQChIaChZERVRFQ1RJT05TRU5TT1JfQ09ORklHEAsSFQoRUEFYQ09V",
+            "TlRFUl9DT05GSUcQDBIYChRTVEFUVVNNRVNTQUdFX0NPTkZJRxANIiMKDkJh",
+            "Y2t1cExvY2F0aW9uEgkKBUZMQVNIEAASBgoCU0QQAUIRCg9wYXlsb2FkX3Zh",
+            "cmlhbnQiWwoNSGFtUGFyYW1ldGVycxIRCgljYWxsX3NpZ24YASABKAkSEAoI",
+            "dHhfcG93ZXIYAiABKAUSEQoJZnJlcXVlbmN5GAMgASgCEhIKCnNob3J0X25h",
+            "bWUYBCABKAkiZgoeTm9kZVJlbW90ZUhhcmR3YXJlUGluc1Jlc3BvbnNlEkQK",
+            "GW5vZGVfcmVtb3RlX2hhcmR3YXJlX3BpbnMYASADKAsyIS5tZXNodGFzdGlj",
+            "Lk5vZGVSZW1vdGVIYXJkd2FyZVBpbiJzCg1TaGFyZWRDb250YWN0EhAKCG5v",
+            "ZGVfbnVtGAEgASgNEh4KBHVzZXIYAiABKAsyEC5tZXNodGFzdGljLlVzZXIS",
+            "FQoNc2hvdWxkX2lnbm9yZRgDIAEoCBIZChFtYW51YWxseV92ZXJpZmllZBgE",
+            "IAEoCCKcAgoUS2V5VmVyaWZpY2F0aW9uQWRtaW4SQgoMbWVzc2FnZV90eXBl",
+            "GAEgASgOMiwubWVzaHRhc3RpYy5LZXlWZXJpZmljYXRpb25BZG1pbi5NZXNz",
+            "YWdlVHlwZRIWCg5yZW1vdGVfbm9kZW51bRgCIAEoDRINCgVub25jZRgDIAEo",
+            "BBIcCg9zZWN1cml0eV9udW1iZXIYBCABKA1IAIgBASJnCgtNZXNzYWdlVHlw",
+            "ZRIZChVJTklUSUFURV9WRVJJRklDQVRJT04QABIbChdQUk9WSURFX1NFQ1VS",
+            "SVRZX05VTUJFUhABEg0KCURPX1ZFUklGWRACEhEKDURPX05PVF9WRVJJRlkQ",
+            "A0ISChBfc2VjdXJpdHlfbnVtYmVyKjcKB09UQU1vZGUSEQoNTk9fUkVCT09U",
+            "X09UQRAAEgsKB09UQV9CTEUQARIMCghPVEFfV0lGSRACQmEKFG9yZy5tZXNo",
+            "dGFzdGljLnByb3RvQgtBZG1pblByb3Rvc1oiZ2l0aHViLmNvbS9tZXNodGFz",
+            "dGljL2dvL2dlbmVyYXRlZKoCFE1lc2h0YXN0aWMuUHJvdG9idWZzugIAYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Meshtastic.Protobufs.ChannelReflection.Descriptor, global::Meshtastic.Protobufs.ConfigReflection.Descriptor, global::Meshtastic.Protobufs.ConnectionStatusReflection.Descriptor, global::Meshtastic.Protobufs.DeviceUiReflection.Descriptor, global::Meshtastic.Protobufs.MeshReflection.Descriptor, global::Meshtastic.Protobufs.ModuleConfigReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.AdminMessage), global::Meshtastic.Protobufs.AdminMessage.Parser, new[]{ "SessionPasskey", "GetChannelRequest", "GetChannelResponse", "GetOwnerRequest", "GetOwnerResponse", "GetConfigRequest", "GetConfigResponse", "GetModuleConfigRequest", "GetModuleConfigResponse", "GetCannedMessageModuleMessagesRequest", "GetCannedMessageModuleMessagesResponse", "GetDeviceMetadataRequest", "GetDeviceMetadataResponse", "GetRingtoneRequest", "GetRingtoneResponse", "GetDeviceConnectionStatusRequest", "GetDeviceConnectionStatusResponse", "SetHamMode", "GetNodeRemoteHardwarePinsRequest", "GetNodeRemoteHardwarePinsResponse", "EnterDfuModeRequest", "DeleteFileRequest", "SetScale", "BackupPreferences", "RestorePreferences", "RemoveBackupPreferences", "SendInputEvent", "SetOwner", "SetChannel", "SetConfig", "SetModuleConfig", "SetCannedMessageModuleMessages", "SetRingtoneMessage", "RemoveByNodenum", "SetFavoriteNode", "RemoveFavoriteNode", "SetFixedPosition", "RemoveFixedPosition", "SetTimeOnly", "GetUiConfigRequest", "GetUiConfigResponse", "StoreUiConfig", "SetIgnoredNode", "RemoveIgnoredNode", "BeginEditSettings", "CommitEditSettings", "AddContact", "KeyVerification", "FactoryResetDevice", "RebootOtaSeconds", "ExitSimulator", "RebootSeconds", "ShutdownSeconds", "FactoryResetConfig", "NodedbReset" }, new[]{ "PayloadVariant" }, new[]{ typeof(global::Meshtastic.Protobufs.AdminMessage.Types.ConfigType), typeof(global::Meshtastic.Protobufs.AdminMessage.Types.ModuleConfigType), typeof(global::Meshtastic.Protobufs.AdminMessage.Types.BackupLocation) }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.AdminMessage.Types.InputEvent), global::Meshtastic.Protobufs.AdminMessage.Types.InputEvent.Parser, new[]{ "EventCode", "KbChar", "TouchX", "TouchY" }, null, null, null, null)}),
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Meshtastic.Protobufs.OTAMode), }, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.AdminMessage), global::Meshtastic.Protobufs.AdminMessage.Parser, new[]{ "SessionPasskey", "GetChannelRequest", "GetChannelResponse", "GetOwnerRequest", "GetOwnerResponse", "GetConfigRequest", "GetConfigResponse", "GetModuleConfigRequest", "GetModuleConfigResponse", "GetCannedMessageModuleMessagesRequest", "GetCannedMessageModuleMessagesResponse", "GetDeviceMetadataRequest", "GetDeviceMetadataResponse", "GetRingtoneRequest", "GetRingtoneResponse", "GetDeviceConnectionStatusRequest", "GetDeviceConnectionStatusResponse", "SetHamMode", "GetNodeRemoteHardwarePinsRequest", "GetNodeRemoteHardwarePinsResponse", "EnterDfuModeRequest", "DeleteFileRequest", "SetScale", "BackupPreferences", "RestorePreferences", "RemoveBackupPreferences", "SendInputEvent", "SetOwner", "SetChannel", "SetConfig", "SetModuleConfig", "SetCannedMessageModuleMessages", "SetRingtoneMessage", "RemoveByNodenum", "SetFavoriteNode", "RemoveFavoriteNode", "SetFixedPosition", "RemoveFixedPosition", "SetTimeOnly", "GetUiConfigRequest", "GetUiConfigResponse", "StoreUiConfig", "SetIgnoredNode", "RemoveIgnoredNode", "ToggleMutedNode", "BeginEditSettings", "CommitEditSettings", "AddContact", "KeyVerification", "FactoryResetDevice", "RebootOtaSeconds", "ExitSimulator", "RebootSeconds", "ShutdownSeconds", "FactoryResetConfig", "NodedbReset", "OtaRequest" }, new[]{ "PayloadVariant" }, new[]{ typeof(global::Meshtastic.Protobufs.AdminMessage.Types.ConfigType), typeof(global::Meshtastic.Protobufs.AdminMessage.Types.ModuleConfigType), typeof(global::Meshtastic.Protobufs.AdminMessage.Types.BackupLocation) }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.AdminMessage.Types.InputEvent), global::Meshtastic.Protobufs.AdminMessage.Types.InputEvent.Parser, new[]{ "EventCode", "KbChar", "TouchX", "TouchY" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.AdminMessage.Types.OTAEvent), global::Meshtastic.Protobufs.AdminMessage.Types.OTAEvent.Parser, new[]{ "RebootOtaMode", "OtaHash" }, null, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.HamParameters), global::Meshtastic.Protobufs.HamParameters.Parser, new[]{ "CallSign", "TxPower", "Frequency", "ShortName" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.NodeRemoteHardwarePinsResponse), global::Meshtastic.Protobufs.NodeRemoteHardwarePinsResponse.Parser, new[]{ "NodeRemoteHardwarePins" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.SharedContact), global::Meshtastic.Protobufs.SharedContact.Parser, new[]{ "NodeNum", "User", "ShouldIgnore", "ManuallyVerified" }, null, null, null, null),
@@ -128,6 +135,31 @@ namespace Meshtastic.Protobufs {
     #endregion
 
   }
+  #region Enums
+  /// <summary>
+  ///
+  /// Firmware update mode for OTA updates
+  /// </summary>
+  public enum OTAMode {
+    /// <summary>
+    ///
+    /// Do not reboot into OTA mode
+    /// </summary>
+    [pbr::OriginalName("NO_REBOOT_OTA")] NoRebootOta = 0,
+    /// <summary>
+    ///
+    /// Reboot into OTA mode for BLE firmware update
+    /// </summary>
+    [pbr::OriginalName("OTA_BLE")] OtaBle = 1,
+    /// <summary>
+    ///
+    /// Reboot into OTA mode for WiFi firmware update
+    /// </summary>
+    [pbr::OriginalName("OTA_WIFI")] OtaWifi = 2,
+  }
+
+  #endregion
+
   #region Messages
   /// <summary>
   ///
@@ -301,6 +333,9 @@ namespace Meshtastic.Protobufs {
         case PayloadVariantOneofCase.RemoveIgnoredNode:
           RemoveIgnoredNode = other.RemoveIgnoredNode;
           break;
+        case PayloadVariantOneofCase.ToggleMutedNode:
+          ToggleMutedNode = other.ToggleMutedNode;
+          break;
         case PayloadVariantOneofCase.BeginEditSettings:
           BeginEditSettings = other.BeginEditSettings;
           break;
@@ -333,6 +368,9 @@ namespace Meshtastic.Protobufs {
           break;
         case PayloadVariantOneofCase.NodedbReset:
           NodedbReset = other.NodedbReset;
+          break;
+        case PayloadVariantOneofCase.OtaRequest:
+          OtaRequest = other.OtaRequest.Clone();
           break;
       }
 
@@ -1437,6 +1475,36 @@ namespace Meshtastic.Protobufs {
       }
     }
 
+    /// <summary>Field number for the "toggle_muted_node" field.</summary>
+    public const int ToggleMutedNodeFieldNumber = 49;
+    /// <summary>
+    ///
+    /// Set specified node-num to be muted
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint ToggleMutedNode {
+      get { return HasToggleMutedNode ? (uint) payloadVariant_ : 0; }
+      set {
+        payloadVariant_ = value;
+        payloadVariantCase_ = PayloadVariantOneofCase.ToggleMutedNode;
+      }
+    }
+    /// <summary>Gets whether the "toggle_muted_node" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasToggleMutedNode {
+      get { return payloadVariantCase_ == PayloadVariantOneofCase.ToggleMutedNode; }
+    }
+    /// <summary> Clears the value of the oneof if it's currently set to "toggle_muted_node" </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearToggleMutedNode() {
+      if (HasToggleMutedNode) {
+        ClearPayloadVariant();
+      }
+    }
+
     /// <summary>Field number for the "begin_edit_settings" field.</summary>
     public const int BeginEditSettingsFieldNumber = 64;
     /// <summary>
@@ -1566,7 +1634,9 @@ namespace Meshtastic.Protobufs {
     ///
     /// Tell the node to reboot into the OTA Firmware in this many seconds (or &lt;0 to cancel reboot)
     /// Only Implemented for ESP32 Devices. This needs to be issued to send a new main firmware via bluetooth.
+    /// Deprecated in favor of reboot_ota_mode in 2.7.17
     /// </summary>
+    [global::System.ObsoleteAttribute]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int RebootOtaSeconds {
@@ -1577,12 +1647,14 @@ namespace Meshtastic.Protobufs {
       }
     }
     /// <summary>Gets whether the "reboot_ota_seconds" field is set</summary>
+    [global::System.ObsoleteAttribute]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HasRebootOtaSeconds {
       get { return payloadVariantCase_ == PayloadVariantOneofCase.RebootOtaSeconds; }
     }
     /// <summary> Clears the value of the oneof if it's currently set to "reboot_ota_seconds" </summary>
+    [global::System.ObsoleteAttribute]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void ClearRebootOtaSeconds() {
@@ -1743,6 +1815,22 @@ namespace Meshtastic.Protobufs {
       }
     }
 
+    /// <summary>Field number for the "ota_request" field.</summary>
+    public const int OtaRequestFieldNumber = 102;
+    /// <summary>
+    ///
+    /// Tell the node to reset into the OTA Loader
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Meshtastic.Protobufs.AdminMessage.Types.OTAEvent OtaRequest {
+      get { return payloadVariantCase_ == PayloadVariantOneofCase.OtaRequest ? (global::Meshtastic.Protobufs.AdminMessage.Types.OTAEvent) payloadVariant_ : null; }
+      set {
+        payloadVariant_ = value;
+        payloadVariantCase_ = value == null ? PayloadVariantOneofCase.None : PayloadVariantOneofCase.OtaRequest;
+      }
+    }
+
     private object payloadVariant_;
     /// <summary>Enum of possible cases for the "payload_variant" oneof.</summary>
     public enum PayloadVariantOneofCase {
@@ -1790,6 +1878,7 @@ namespace Meshtastic.Protobufs {
       StoreUiConfig = 46,
       SetIgnoredNode = 47,
       RemoveIgnoredNode = 48,
+      ToggleMutedNode = 49,
       BeginEditSettings = 64,
       CommitEditSettings = 65,
       AddContact = 66,
@@ -1801,6 +1890,7 @@ namespace Meshtastic.Protobufs {
       ShutdownSeconds = 98,
       FactoryResetConfig = 99,
       NodedbReset = 100,
+      OtaRequest = 102,
     }
     private PayloadVariantOneofCase payloadVariantCase_ = PayloadVariantOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1875,6 +1965,7 @@ namespace Meshtastic.Protobufs {
       if (!object.Equals(StoreUiConfig, other.StoreUiConfig)) return false;
       if (SetIgnoredNode != other.SetIgnoredNode) return false;
       if (RemoveIgnoredNode != other.RemoveIgnoredNode) return false;
+      if (ToggleMutedNode != other.ToggleMutedNode) return false;
       if (BeginEditSettings != other.BeginEditSettings) return false;
       if (CommitEditSettings != other.CommitEditSettings) return false;
       if (!object.Equals(AddContact, other.AddContact)) return false;
@@ -1886,6 +1977,7 @@ namespace Meshtastic.Protobufs {
       if (ShutdownSeconds != other.ShutdownSeconds) return false;
       if (FactoryResetConfig != other.FactoryResetConfig) return false;
       if (NodedbReset != other.NodedbReset) return false;
+      if (!object.Equals(OtaRequest, other.OtaRequest)) return false;
       if (PayloadVariantCase != other.PayloadVariantCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -1938,6 +2030,7 @@ namespace Meshtastic.Protobufs {
       if (payloadVariantCase_ == PayloadVariantOneofCase.StoreUiConfig) hash ^= StoreUiConfig.GetHashCode();
       if (HasSetIgnoredNode) hash ^= SetIgnoredNode.GetHashCode();
       if (HasRemoveIgnoredNode) hash ^= RemoveIgnoredNode.GetHashCode();
+      if (HasToggleMutedNode) hash ^= ToggleMutedNode.GetHashCode();
       if (HasBeginEditSettings) hash ^= BeginEditSettings.GetHashCode();
       if (HasCommitEditSettings) hash ^= CommitEditSettings.GetHashCode();
       if (payloadVariantCase_ == PayloadVariantOneofCase.AddContact) hash ^= AddContact.GetHashCode();
@@ -1949,6 +2042,7 @@ namespace Meshtastic.Protobufs {
       if (HasShutdownSeconds) hash ^= ShutdownSeconds.GetHashCode();
       if (HasFactoryResetConfig) hash ^= FactoryResetConfig.GetHashCode();
       if (HasNodedbReset) hash ^= NodedbReset.GetHashCode();
+      if (payloadVariantCase_ == PayloadVariantOneofCase.OtaRequest) hash ^= OtaRequest.GetHashCode();
       hash ^= (int) payloadVariantCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -2140,6 +2234,10 @@ namespace Meshtastic.Protobufs {
         output.WriteRawTag(128, 3);
         output.WriteUInt32(RemoveIgnoredNode);
       }
+      if (HasToggleMutedNode) {
+        output.WriteRawTag(136, 3);
+        output.WriteUInt32(ToggleMutedNode);
+      }
       if (HasBeginEditSettings) {
         output.WriteRawTag(128, 4);
         output.WriteBool(BeginEditSettings);
@@ -2187,6 +2285,10 @@ namespace Meshtastic.Protobufs {
       if (SessionPasskey.Length != 0) {
         output.WriteRawTag(170, 6);
         output.WriteBytes(SessionPasskey);
+      }
+      if (payloadVariantCase_ == PayloadVariantOneofCase.OtaRequest) {
+        output.WriteRawTag(178, 6);
+        output.WriteMessage(OtaRequest);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -2370,6 +2472,10 @@ namespace Meshtastic.Protobufs {
         output.WriteRawTag(128, 3);
         output.WriteUInt32(RemoveIgnoredNode);
       }
+      if (HasToggleMutedNode) {
+        output.WriteRawTag(136, 3);
+        output.WriteUInt32(ToggleMutedNode);
+      }
       if (HasBeginEditSettings) {
         output.WriteRawTag(128, 4);
         output.WriteBool(BeginEditSettings);
@@ -2417,6 +2523,10 @@ namespace Meshtastic.Protobufs {
       if (SessionPasskey.Length != 0) {
         output.WriteRawTag(170, 6);
         output.WriteBytes(SessionPasskey);
+      }
+      if (payloadVariantCase_ == PayloadVariantOneofCase.OtaRequest) {
+        output.WriteRawTag(178, 6);
+        output.WriteMessage(OtaRequest);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -2560,6 +2670,9 @@ namespace Meshtastic.Protobufs {
       if (HasRemoveIgnoredNode) {
         size += 2 + pb::CodedOutputStream.ComputeUInt32Size(RemoveIgnoredNode);
       }
+      if (HasToggleMutedNode) {
+        size += 2 + pb::CodedOutputStream.ComputeUInt32Size(ToggleMutedNode);
+      }
       if (HasBeginEditSettings) {
         size += 2 + 1;
       }
@@ -2592,6 +2705,9 @@ namespace Meshtastic.Protobufs {
       }
       if (HasNodedbReset) {
         size += 2 + 1;
+      }
+      if (payloadVariantCase_ == PayloadVariantOneofCase.OtaRequest) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(OtaRequest);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -2786,6 +2902,9 @@ namespace Meshtastic.Protobufs {
         case PayloadVariantOneofCase.RemoveIgnoredNode:
           RemoveIgnoredNode = other.RemoveIgnoredNode;
           break;
+        case PayloadVariantOneofCase.ToggleMutedNode:
+          ToggleMutedNode = other.ToggleMutedNode;
+          break;
         case PayloadVariantOneofCase.BeginEditSettings:
           BeginEditSettings = other.BeginEditSettings;
           break;
@@ -2824,6 +2943,12 @@ namespace Meshtastic.Protobufs {
           break;
         case PayloadVariantOneofCase.NodedbReset:
           NodedbReset = other.NodedbReset;
+          break;
+        case PayloadVariantOneofCase.OtaRequest:
+          if (OtaRequest == null) {
+            OtaRequest = new global::Meshtastic.Protobufs.AdminMessage.Types.OTAEvent();
+          }
+          OtaRequest.MergeFrom(other.OtaRequest);
           break;
       }
 
@@ -3103,6 +3228,10 @@ namespace Meshtastic.Protobufs {
             RemoveIgnoredNode = input.ReadUInt32();
             break;
           }
+          case 392: {
+            ToggleMutedNode = input.ReadUInt32();
+            break;
+          }
           case 512: {
             BeginEditSettings = input.ReadBool();
             break;
@@ -3159,6 +3288,15 @@ namespace Meshtastic.Protobufs {
           }
           case 810: {
             SessionPasskey = input.ReadBytes();
+            break;
+          }
+          case 818: {
+            global::Meshtastic.Protobufs.AdminMessage.Types.OTAEvent subBuilder = new global::Meshtastic.Protobufs.AdminMessage.Types.OTAEvent();
+            if (payloadVariantCase_ == PayloadVariantOneofCase.OtaRequest) {
+              subBuilder.MergeFrom(OtaRequest);
+            }
+            input.ReadMessage(subBuilder);
+            OtaRequest = subBuilder;
             break;
           }
         }
@@ -3437,6 +3575,10 @@ namespace Meshtastic.Protobufs {
             RemoveIgnoredNode = input.ReadUInt32();
             break;
           }
+          case 392: {
+            ToggleMutedNode = input.ReadUInt32();
+            break;
+          }
           case 512: {
             BeginEditSettings = input.ReadBool();
             break;
@@ -3493,6 +3635,15 @@ namespace Meshtastic.Protobufs {
           }
           case 810: {
             SessionPasskey = input.ReadBytes();
+            break;
+          }
+          case 818: {
+            global::Meshtastic.Protobufs.AdminMessage.Types.OTAEvent subBuilder = new global::Meshtastic.Protobufs.AdminMessage.Types.OTAEvent();
+            if (payloadVariantCase_ == PayloadVariantOneofCase.OtaRequest) {
+              subBuilder.MergeFrom(OtaRequest);
+            }
+            input.ReadMessage(subBuilder);
+            OtaRequest = subBuilder;
             break;
           }
         }
@@ -3632,6 +3783,11 @@ namespace Meshtastic.Protobufs {
         /// TODO: REPLACE
         /// </summary>
         [pbr::OriginalName("PAXCOUNTER_CONFIG")] PaxcounterConfig = 12,
+        /// <summary>
+        ///
+        /// TODO: REPLACE
+        /// </summary>
+        [pbr::OriginalName("STATUSMESSAGE_CONFIG")] StatusmessageConfig = 13,
       }
 
       public enum BackupLocation {
@@ -3967,6 +4123,255 @@ namespace Meshtastic.Protobufs {
               }
               case 32: {
                 TouchY = input.ReadUInt32();
+                break;
+              }
+            }
+          }
+        }
+        #endif
+
+      }
+
+      /// <summary>
+      ///
+      /// User is requesting an over the air update.
+      /// Node will reboot into the OTA loader
+      /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+      public sealed partial class OTAEvent : pb::IMessage<OTAEvent>
+      #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          , pb::IBufferMessage
+      #endif
+      {
+        private static readonly pb::MessageParser<OTAEvent> _parser = new pb::MessageParser<OTAEvent>(() => new OTAEvent());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public static pb::MessageParser<OTAEvent> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Meshtastic.Protobufs.AdminMessage.Descriptor.NestedTypes[1]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public OTAEvent() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public OTAEvent(OTAEvent other) : this() {
+          rebootOtaMode_ = other.rebootOtaMode_;
+          otaHash_ = other.otaHash_;
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public OTAEvent Clone() {
+          return new OTAEvent(this);
+        }
+
+        /// <summary>Field number for the "reboot_ota_mode" field.</summary>
+        public const int RebootOtaModeFieldNumber = 1;
+        private global::Meshtastic.Protobufs.OTAMode rebootOtaMode_ = global::Meshtastic.Protobufs.OTAMode.NoRebootOta;
+        /// <summary>
+        ///
+        /// Tell the node to reboot into OTA mode for firmware update via BLE or WiFi (ESP32 only for now)
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public global::Meshtastic.Protobufs.OTAMode RebootOtaMode {
+          get { return rebootOtaMode_; }
+          set {
+            rebootOtaMode_ = value;
+          }
+        }
+
+        /// <summary>Field number for the "ota_hash" field.</summary>
+        public const int OtaHashFieldNumber = 2;
+        private pb::ByteString otaHash_ = pb::ByteString.Empty;
+        /// <summary>
+        ///
+        /// A 32 byte hash of the OTA firmware.
+        /// Used to verify the integrity of the firmware before applying an update.
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public pb::ByteString OtaHash {
+          get { return otaHash_; }
+          set {
+            otaHash_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public override bool Equals(object other) {
+          return Equals(other as OTAEvent);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public bool Equals(OTAEvent other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if (RebootOtaMode != other.RebootOtaMode) return false;
+          if (OtaHash != other.OtaHash) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public override int GetHashCode() {
+          int hash = 1;
+          if (RebootOtaMode != global::Meshtastic.Protobufs.OTAMode.NoRebootOta) hash ^= RebootOtaMode.GetHashCode();
+          if (OtaHash.Length != 0) hash ^= OtaHash.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void WriteTo(pb::CodedOutputStream output) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          output.WriteRawMessage(this);
+        #else
+          if (RebootOtaMode != global::Meshtastic.Protobufs.OTAMode.NoRebootOta) {
+            output.WriteRawTag(8);
+            output.WriteEnum((int) RebootOtaMode);
+          }
+          if (OtaHash.Length != 0) {
+            output.WriteRawTag(18);
+            output.WriteBytes(OtaHash);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        #endif
+        }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+          if (RebootOtaMode != global::Meshtastic.Protobufs.OTAMode.NoRebootOta) {
+            output.WriteRawTag(8);
+            output.WriteEnum((int) RebootOtaMode);
+          }
+          if (OtaHash.Length != 0) {
+            output.WriteRawTag(18);
+            output.WriteBytes(OtaHash);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(ref output);
+          }
+        }
+        #endif
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public int CalculateSize() {
+          int size = 0;
+          if (RebootOtaMode != global::Meshtastic.Protobufs.OTAMode.NoRebootOta) {
+            size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) RebootOtaMode);
+          }
+          if (OtaHash.Length != 0) {
+            size += 1 + pb::CodedOutputStream.ComputeBytesSize(OtaHash);
+          }
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void MergeFrom(OTAEvent other) {
+          if (other == null) {
+            return;
+          }
+          if (other.RebootOtaMode != global::Meshtastic.Protobufs.OTAMode.NoRebootOta) {
+            RebootOtaMode = other.RebootOtaMode;
+          }
+          if (other.OtaHash.Length != 0) {
+            OtaHash = other.OtaHash;
+          }
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void MergeFrom(pb::CodedInputStream input) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          input.ReadRawMessage(this);
+        #else
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 8: {
+                RebootOtaMode = (global::Meshtastic.Protobufs.OTAMode) input.ReadEnum();
+                break;
+              }
+              case 18: {
+                OtaHash = input.ReadBytes();
+                break;
+              }
+            }
+          }
+        #endif
+        }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+                break;
+              case 8: {
+                RebootOtaMode = (global::Meshtastic.Protobufs.OTAMode) input.ReadEnum();
+                break;
+              }
+              case 18: {
+                OtaHash = input.ReadBytes();
                 break;
               }
             }
